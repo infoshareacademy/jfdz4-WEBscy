@@ -3,10 +3,13 @@
 }
 
 .funkcjonalnosci_tresc {
-    margin: 30px;
+    float: left;
+    width: 200px;
+    margin: 20px;
     padding: 20px;
-    background-color: beige;
+    background-color: #bfbfbf;
     color: gray;
+    text-align: center;
 }
 
 .funkcjonalnosci_picto {
