@@ -50,3 +50,79 @@ nav ul li a:hover {
     width: 100%;
     height: 500px; /* wysokość losowa mniej wiecej */
 }
+#formularz {
+    background-color: rosybrown;
+}
+#button {
+    background-color: grey;
+    border-color: grey;
+}
+
+#funkcjonalnosci {
+
+}
+
+.funkcjonalnosci_tresc {
+    float: left;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #bfbfbf;
+    color: gray;
+    text-align: center;
+}
+
+.funkcjonalnosci_picto {
+    width: 50px;
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+.funkcjonalnosci_naglowek {
+
+
+}
+
+.funkcjonalnosci_opis {
+
+}
+
+
+.logo {
+    width: 200px;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 15px;
+    font-size: 14pt;
+    font-weight: bold;,
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#zajawka {
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #dedede;
+    width: 100%;
+    height: 500px; /* wysokość losowa mniej wiecej */
+}
