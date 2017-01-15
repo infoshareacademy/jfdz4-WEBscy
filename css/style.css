@@ -112,11 +112,14 @@ nav ul li a {
     color: rgb(0, 0, 0);
     margin-left: 20px;
     font-size: 14pt;
-    font-weight: bold;,
+    font-weight: bold;
+    transition: border-bottom 1s;
+    border-bottom: 1px solid transparent;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
 }
 
 #zajawka {
