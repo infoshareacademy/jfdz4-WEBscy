@@ -51,13 +51,19 @@ nav ul li a:hover {
     height: 500px; /* wysokość losowa mniej wiecej */
 }
 #formularz {
-    background-color: lightseagreen;
-}
-#button {
-    background-color: grey;
-    border-color: grey;
+    margin-left: 45%;
+    float: left;
+    clear: both;
 }
 
+#button {
+    width: 100%;
+    display: inherit;
+}
+
+#button:hover {
+    color: #6b88ff;
+}
 #funkcjonalnosci {
 
 }
