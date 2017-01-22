@@ -88,6 +88,23 @@ padding:10px;
 #button:hover {
     color: #6b88ff;
 }
+
+.text {
+    float: right;
+position: absolute;
+    clear: right;
+    margin-right: 70%;
+    margin-left: 2%;
+    font-family: cursive;
+    color: #6b88ff;
+    text-decoration: blink;
+
+
+}
+
+
+
+
 #funkcjonalnosci {
     font-family: 'Open Sans', sans-serif;
     margin: 100px auto 0 auto;
