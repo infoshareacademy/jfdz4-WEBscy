@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #bfbfbf
 }
 
 .header {
@@ -55,11 +56,33 @@ nav ul li a:hover {
     margin-left: 45%;
     float: left;
     clear: both;
+    background-color: #bfbfbf
+}
+
+.contact {
+
+    font-family: 'Open Sans', sans-serif;
+    color: #6b88ff;
+    text-decoration: blink;
+}
+
+.placeholder {
+    color: #6b88ff;
+
+    border-radius: 6%;
+    border-color: #72a8ff;
+    padding: 10px;
+margin-bottom: 10px;
 }
 
 #button {
+    height: 100%;
     width: 100%;
     display: inherit;
+    background-color: #72a8ff;
+    border-color: #72a8ff;
+    border-radius: 6%;
+padding:10px;
 }
 
 #button:hover {
