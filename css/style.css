@@ -101,6 +101,13 @@ position: absolute;
 
 }
 
+.text :hover {
+
+    color: blue;
+    transition-duration:10s;
+
+}
+
 .imgform {
     width: 70px;
 
