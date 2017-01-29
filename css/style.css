@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #bfbfbf
+    background-color: #ffffff;
 }
 
 .header {
@@ -16,6 +16,7 @@ body {
 .logo {
     width: 200px;
     float: left;
+    border: none;
 }
 
 nav {
