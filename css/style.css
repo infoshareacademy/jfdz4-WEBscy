@@ -57,11 +57,25 @@ nav ul li a:hover {
 }
 
 #formularz {
-    margin-left: 45%;
-    float: left;
-    clear: both;
-    background-color: #bfbfbf
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
 }
+
+#formularz .text {
+ width: 50%;
+min-width: 300px;
+}
+
+.form-box {
+    width: 50%;
+    min-width: 300px;
+    text-align: center;
+}
+
+
 
 .contact {
 
@@ -71,34 +85,46 @@ nav ul li a:hover {
 }
 
 .placeholder {
-    color: #6b88ff;
 
-    border-radius: 6%;
-    border-color: #72a8ff;
+
+    width: 350px;
+    min-width: 150px;
+    color: #6c6e70;
+border: 1px  solid #dedede;
+    border-radius: 2%;
     padding: 10px;
 margin-bottom: 10px;
 }
 
+.placeholder:invalid {
+
+    border: red solid;
+
+}
+
+
+
+
+
+
 #button {
-    height: 100%;
-    width: 100%;
-    display: inherit;
-    background-color: #72a8ff;
-    border-color: #72a8ff;
-    border-radius: 6%;
+    width: 350px;
+    min-width: 150px;
+color: #ffffff;
+    font-weight: bold;
+    background-color:#6c6e70 ;
+   border: none;
 padding:10px;
 }
 
 #button:hover {
-    color: #6b88ff;
+    color: #6c6e70 ;
+    background-color: #e5e5e5;
+    cursor: pointer;
 }
 
 .text {
-    float: right;
-position: absolute;
-    clear: right;
-    margin-right: 70%;
-    margin-left: 2%;
+
     font-family: cursive;
     color: #6b88ff;
     text-decoration: blink;
