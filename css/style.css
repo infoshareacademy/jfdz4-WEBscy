@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #bfbfbf
 }
 
 .header {
@@ -50,47 +51,105 @@ nav ul li a:hover {
     width: 100%;
     height: 500px; /* wysokość losowa mniej wiecej */
 }
+
 #formularz {
-    background-color: rosybrown;
+    margin-left: 45%;
+    float: left;
+    clear: both;
+    background-color: #bfbfbf
 }
+
+.contact {
+
+    font-family: 'Open Sans', sans-serif;
+    color: #6b88ff;
+    text-decoration: blink;
+}
+
+.placeholder {
+    color: #6b88ff;
+
+    border-radius: 6%;
+    border-color: #72a8ff;
+    padding: 10px;
+margin-bottom: 10px;
+}
+
 #button {
-    background-color: grey;
-    border-color: grey;
+    height: 100%;
+    width: 100%;
+    display: inherit;
+    background-color: #72a8ff;
+    border-color: #72a8ff;
+    border-radius: 6%;
+padding:10px;
 }
+
+#button:hover {
+    color: #6b88ff;
+}
+
+.text {
+    float: right;
+position: absolute;
+    clear: right;
+    margin-right: 70%;
+    margin-left: 2%;
+    font-family: cursive;
+    color: #6b88ff;
+    text-decoration: blink;
+
+}
+
+.text :hover {
+
+    color: blue;
+    transition-duration:10s;
+
+}
+
+.imgform {
+    width: 70px;
+
+}
+
+
 
 #funkcjonalnosci {
-
+    font-family: 'Open Sans', sans-serif;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    width: 90%;
+    position: relative;
 }
 
 .funkcjonalnosci_tresc {
-    float: left;
+    color: #5e0000;
+    padding: 40px 60px;
+    margin: 15px auto;
     width: 200px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #bfbfbf;
-    color: gray;
     text-align: center;
+    display: inline-block;
+}
+
+.haslo {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.tojestto {
+    font-size: 48px;
+    color: #f8f8f8;
+    margin: -130px auto 60px auto;
+    font-style: italic;
+    font-weight: 800;
 }
 
 .funkcjonalnosci_picto {
-    width: 50px;
-    height: 50px;
-    background-color: antiquewhite;
-}
-
-.funkcjonalnosci_naglowek {
-
-
-}
-
-.funkcjonalnosci_opis {
-
-}
-
-
-.logo {
-    width: 200px;
-    float: left;
+    width: 90px;
+    padding-top: 30px;
 }
 
 nav {
