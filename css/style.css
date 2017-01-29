@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #bfbfbf
+    background-color: #ffffff;
 }
 
 .header {
@@ -11,11 +11,15 @@ body {
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
     width: 200px;
     float: left;
+    border: none;
 }
 
 nav {
