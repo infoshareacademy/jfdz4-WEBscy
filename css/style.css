@@ -11,6 +11,9 @@ body {
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
