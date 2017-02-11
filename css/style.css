@@ -54,6 +54,7 @@ nav ul li a:hover {
     border: 1px solid #dedede;
     width: 100%;
     height: 500px; /* wysokość losowa mniej wiecej */
+    background-image: url("http://vipline.co/wp-content/themes/bustaxi/img/backgrounds/gdansk.jpg");
 }
 
 #formularz {
@@ -228,6 +229,7 @@ nav ul li a:hover {
 
 #odniesienie-do-formularza {
     position: center;
+    margin-top: 250px;
 
 }
 
@@ -247,4 +249,7 @@ nav ul li a:hover {
     text-decoration: none;
     outline: none;
 
+
 }
+
+
