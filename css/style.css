@@ -1,72 +1,169 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-}
-
-.header {
-    margin: 10px 0;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
 
 .logo {
-    width: 200px;
+   width: 200px;
     float: left;
     border: none;
 }
-
-nav {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+.navbar-default .navbar-nav > li > a {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    margin-left: 15px;
     font-size: 14pt;
-    font-weight: bold;,
+    font-weight: bold;
+    transition: border-bottom 1s;
+    border-bottom: 1px solid transparent;
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.slider {
+    position: relative;
+}
+.twojemiasto {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.twojemiasto-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.twojemiasto-btn a {
+    font-size: 14pt;
+}
+.twojemiasto span {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+#funkcjonalnosci {
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 1.4em;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-#zajawka {
-    margin: 10px 0;
-    box-sizing: border-box;
-    border: 1px solid #dedede;
+.funkcjonalnosci_tresc, .funkcjonalnosci_tresc2, .funkcjonalnosci_tresc3, .funkcjonalnosci_tresc4 {
     width: 100%;
-    height: 500px; /* wysokość losowa mniej wiecej */
+    min-width: 320px;
+    padding: 0 30px 30px;
+    box-sizing: border-box;
+    border: solid white 1px;
+}
+
+.funkcjonalnosci_tresc {
+    text-align: center;
+    color: #204575;
+    background-color: rgba(32, 69, 117, 0.05);
+}
+
+.funkcjonalnosci_tresc2 {
+    text-align: center;
+    color: #2a8487;
+    background-color: rgba(42, 132, 135, 0.04);
+}
+
+.funkcjonalnosci_tresc3 {
+    text-align: center;
+    color: #5e0000;
+    background-color: rgba(94, 0, 0, 0.05);
+}
+
+.funkcjonalnosci_tresc4 {
+    text-align: center;
+    color: #55691e;
+    background-color: rgba(85, 105, 30, 0.05);
+}
+
+.funkcjonalnosci_naglowek {
+    line-height: 1.3em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.haslo {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    background-color: #5e0000;
+}
+
+.tojestto {
+    font-size: 36px;
+    color: #f8f8f8;
+    font-style: italic;
+    font-weight: 800;
+    padding: 5px 0;
+}
+
+.funkcjonalnosci_picto {
+    width: 90px;
+    padding-top: 30px;
+}
+
+.team {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.osoba {
+    /* kuku! nic tu nie ma */
+}
+
+.osoba .profilowe {
+    max-width: 200px;
+}
+
+.osoba .imienazwisko {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13pt;
+    width: 100%;
+}
+
+.osoba .linki {
+    /* kuku! nic tu nie ma */
+}
+
+.osoba .linki img {
+    max-width: 30px;
+}
+
+.tytul-sekcji {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+    color: #5e0000;
+    margin: 25px 0;
 }
 
 #formularz {
     display: flex;
     justify-content: center;
-
     flex-direction: column;
     align-items: center;
 }
 
 #formularz .text {
- width: 50%;
-min-width: 300px;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
 }
 
 .form-box {
@@ -75,176 +172,146 @@ min-width: 300px;
     text-align: center;
 }
 
-
-
 .contact {
-
     font-family: 'Open Sans', sans-serif;
-    color: #6b88ff;
+    color: #5e0000;
     text-decoration: blink;
 }
 
 .placeholder {
-
-
-    width: 350px;
-    min-width: 150px;
     color: #6c6e70;
-border: 1px  solid #dedede;
+    border: 1px  solid #dedede;
     border-radius: 2%;
-    padding: 10px;
-margin-bottom: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 400px;
 }
 
-.placeholder:invalid {
-
-    border: red solid;
-
-}
-
-
-
-
-
-
-#button {
-    width: 350px;
-    min-width: 150px;
-color: #ffffff;
+.button {
+    color: #ffffff;
     font-weight: bold;
     background-color:#6c6e70 ;
-   border: none;
-padding:10px;
+    border: none;
+    padding: 12px;
+    min-width: 150px;
 }
 
-#button:hover {
+.button:hover {
     color: #6c6e70 ;
     background-color: #e5e5e5;
     cursor: pointer;
 }
 
 .text {
-
     font-family: cursive;
-    color: #6b88ff;
-    text-decoration: blink;
-
-}
-
-.text :hover {
-
-    color: blue;
-    transition-duration:10s;
-
-}
-
-.imgform {
-    width: 70px;
-
-}
-
-
-
-#funkcjonalnosci {
-    font-family: 'Open Sans', sans-serif;
-    margin: 100px auto 0 auto;
-    text-align: center;
-    width: 90%;
-    position: relative;
-}
-
-.funkcjonalnosci_tresc {
     color: #5e0000;
-    padding: 40px 60px;
-    margin: 15px auto;
-    width: 200px;
-    text-align: center;
-    display: inline-block;
+    text-decoration: blink;
 }
 
-.haslo {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin-bottom: 80px;
+.stopka {
+    margin-top: 40px;
+    background-color: #e3e3e3;
     width: 100%;
-    overflow: hidden;
+    padding: 10px;
 }
 
-.tojestto {
-    font-size: 48px;
-    color: #f8f8f8;
-    margin: -130px auto 60px auto;
-    font-style: italic;
-    font-weight: 800;
+.stopka p {
+    color: #000;
 }
 
-.funkcjonalnosci_picto {
-    width: 90px;
-    padding-top: 30px;
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .funkcjonalnosci_tresc, .funkcjonalnosci_tresc2, .funkcjonalnosci_tresc3, .funkcjonalnosci_tresc4 {
+        width: 50%;
+    }
 }
 
-nav {
-    float: right;
-    margin-right: 20px;
+@media screen and (min-width: 1201px) {
+    .funkcjonalnosci_tresc, .funkcjonalnosci_tresc2, .funkcjonalnosci_tresc3, .funkcjonalnosci_tresc4 {
+        width: 25%;
+    }
 }
 
-nav ul {
-    list-style-type: none;
+@media (max-width: 767px) {
+    .navbar-header {
+        margin-bottom: 70px;
+    }
+
+    .navbar-collapse {
+        border-bottom: 1px solid #dedede;
+    }
+
+    .twojemiasto {
+        top: 20%;
+    }
+
+    .twojemiasto span {
+        padding: 10px 15px;
+        font-size: 1.5em;
+    }
+
+    .twojemiasto-btn {
+        top: 60%;
+    }
+
+    .twojemiasto-btn a {
+        font-size: 12pt;
+    }
+
+    .osoba {
+        margin-bottom: 20px;
+    }
+
+    .tytul-sekcji {
+        font-size: 18pt;
+    }
+
+    .tojestto {
+        font-size: 18pt;
+    }
+
+    .placeholder {
+        width: 80%;
+    }
+
+    .button {
+        width: 80%;
+    }
 }
 
-nav ul li {
-    display: inline;
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover {
+        border-bottom: 1px solid #000000;
+        text-decoration: none;
+    }
 }
 
-nav ul li a {
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    margin-left: 20px;
-    font-size: 14pt;
-    font-weight: bold;
-    transition: border-bottom 1s;
-    border-bottom: 1px solid transparent;
+@media (max-width: 992px) {
+    .twojemiasto-btn {
+        top: 55%;
+    }
 }
 
-nav ul li a:hover {
-    border-bottom: 1px solid #000000;
-    text-decoration: none;
+@media (min-width: 1200px) {
+    .twojemiasto-btn {
+        top: 50%;
+    }
+
+    .twojemiasto-btn a {
+        font-size: 16pt;
+    }
 }
 
-#zajawka {
-    margin: 10px 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 572px; /* wysokość losowa mniej wiecej */
-    text-align: center;
-}
+@media (min-width: 1500px) {
+    .twojemiasto-btn {
+        top: 40%;
+    }
 
-.foto {
-    max-height: 572px;
-    width: 80%;
-    opacity: 0.9;
-}
-
-#odniesienie-do-formularza {
-    position: center;
-
-}
-
-.button1 a {
-    display:inline-block;
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 250px;
-    transition: all 0.2s;
-    cursor: pointer;
-    margin: 5px;
-    text-decoration: none;
-    outline: none;
-
+    .twojemiasto-btn a {
+        font-size: 18pt;
+    }
 }
