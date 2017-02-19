@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
 
 .logo {
-   width: 200px;
+    width: 200px;
     float: left;
     border: none;
 }
+
 .navbar-default .navbar-nav > li > a {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -14,13 +15,16 @@
     transition: border-bottom 1s;
     border-bottom: 1px solid transparent;
 }
+
 .navbar-default {
     background-color: #ffffff;
     border-color: #ffffff;
 }
+
 .slider {
     position: relative;
 }
+
 .twojemiasto {
     position: absolute;
     top: 25%;
@@ -29,6 +33,7 @@
     margin: 0 auto;
     text-align: center;
 }
+
 .twojemiasto-btn {
     position: absolute;
     top: 50%;
@@ -37,9 +42,11 @@
     margin: 0 auto;
     text-align: center;
 }
+
 .twojemiasto-btn a {
     font-size: 14pt;
 }
+
 .twojemiasto span {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px 30px;
@@ -48,6 +55,7 @@
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
+
 #funkcjonalnosci {
     font-family: 'Open Sans', sans-serif;
     margin: 15px auto 0 auto;
@@ -180,7 +188,7 @@
 
 .placeholder {
     color: #6c6e70;
-    border: 1px  solid #dedede;
+    border: 1px solid #dedede;
     border-radius: 2%;
     padding: 12px;
     margin-bottom: 10px;
@@ -190,14 +198,14 @@
 .button {
     color: #ffffff;
     font-weight: bold;
-    background-color:#6c6e70 ;
+    background-color: #6c6e70;
     border: none;
     padding: 12px;
     min-width: 150px;
 }
 
 .button:hover {
-    color: #6c6e70 ;
+    color: #6c6e70;
     background-color: #e5e5e5;
     cursor: pointer;
 }
