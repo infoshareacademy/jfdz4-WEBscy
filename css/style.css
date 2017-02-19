@@ -168,6 +168,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
 }
 
 #formularz .text {
@@ -191,7 +192,7 @@
 
 .placeholder {
   color: #6c6e70;
-  border: 1px solid #dedede;
+  border: 1px solid rgb(94, 0, 0);
   border-radius: 2%;
   padding: 12px;
   margin-bottom: 10px;
@@ -228,6 +229,20 @@
 
 .stopka p {
   color: #000;
+}
+
+.star {
+  font-size: 36pt;
+  color: gold;
+}
+
+
+#funkcjonalnosci-dodatkowe {
+  padding-bottom: 35px;
+}
+
+#funkcjonalnosci-dodatkowe h3 {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
@@ -296,6 +311,7 @@
 }
 
 @media (min-width: 768px) {
+
   .navbar-default .navbar-nav {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -305,15 +321,23 @@
     border-bottom: 1px solid #000000;
     text-decoration: none;
   }
+
 }
 
 @media (max-width: 992px) {
+
   .twojemiasto-btn {
     top: 55%;
   }
+
+  .placeholder {
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 1200px) {
+
   .twojemiasto-btn {
     top: 50%;
   }
@@ -321,9 +345,11 @@
   .twojemiasto-btn a {
     font-size: 16pt;
   }
+
 }
 
 @media (min-width: 1500px) {
+
   .twojemiasto-btn {
     top: 40%;
   }
@@ -331,4 +357,5 @@
   .twojemiasto-btn a {
     font-size: 18pt;
   }
+
 }
