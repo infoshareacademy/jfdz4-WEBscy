@@ -2,7 +2,6 @@
 
 .logo {
   width: 200px;
-  float: left;
   border: none;
 }
 
@@ -265,7 +264,7 @@
 
 @media (max-width: 767px) {
   .navbar-header {
-    margin-bottom: 70px;
+    margin-bottom: 25px;
   }
 
   .navbar-collapse {
@@ -307,6 +306,10 @@
 
   .button {
     width: 80%;
+  }
+
+  .logo {
+    width: 150px;
   }
 }
 
