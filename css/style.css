@@ -311,6 +311,10 @@
   .logo {
     width: 150px;
   }
+
+  .navbar-default .navbar-nav > li > a {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
