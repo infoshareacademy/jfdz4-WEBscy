@@ -177,11 +177,7 @@
   font-weight: bold;
 }
 
-.form-box {
-  width: 50%;
-  min-width: 300px;
-  text-align: center;
-}
+
 
 .contact {
   font-family: 'Open Sans', sans-serif;
@@ -195,28 +191,33 @@
   border-radius: 2%;
   padding: 12px;
   margin-bottom: 10px;
-  width: 400px;
+  width: 300px;
 }
 
 .button {
   color: #ffffff;
   font-weight: bold;
-  background-color: #6c6e70;
+  background-color: #5e0000;
   border: none;
   padding: 12px;
   min-width: 150px;
 }
 
 .button:hover {
-  color: #6c6e70;
-  background-color: #e5e5e5;
+  color: #ffffff;
+  background-color: #f2000c;
   cursor: pointer;
 }
 
 .text {
   font-family: cursive;
-  color: #5e0000;
+  color: #3c3d3f;
   text-decoration: blink;
+}
+
+.clause {
+  font-size: x-small;
+
 }
 
 .stopka {
