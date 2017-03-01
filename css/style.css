@@ -387,8 +387,8 @@
 }
 
 .pudelko:hover > .karta {
-  transform:rotateY(180deg);
-  -webkit-transform:rotateY(180deg);
+  transform:rotateY(190deg);
+  -webkit-transform:rotateY(190deg);
 }
 
 .przod {
