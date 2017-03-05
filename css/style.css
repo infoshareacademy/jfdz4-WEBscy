@@ -415,3 +415,12 @@
   backface-visibility:hidden;
   -webkit-backface-visibility:hidden;
 }
+
+.img-slider {
+  width: 100%;
+  min-height: 399px;
+  max-height: 400px;
+
+
+}
+
