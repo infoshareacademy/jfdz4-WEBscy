@@ -2,7 +2,6 @@
 
 .logo {
   width: 200px;
-  float: left;
   border: none;
 }
 
@@ -172,7 +171,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding-bottom: 20px;
 }
 
 #formularz .text {
@@ -182,11 +181,7 @@
   font-weight: bold;
 }
 
-.form-box {
-  width: 50%;
-  min-width: 300px;
-  text-align: center;
-}
+
 
 .contact {
   font-family: 'Open Sans', sans-serif;
@@ -200,28 +195,33 @@
   border-radius: 2%;
   padding: 12px;
   margin-bottom: 10px;
-  width: 400px;
+  width: 300px;
 }
 
 .button {
   color: #ffffff;
   font-weight: bold;
-  background-color: #6c6e70;
+  background-color: #5e0000;
   border: none;
   padding: 12px;
   min-width: 150px;
 }
 
 .button:hover {
-  color: #6c6e70;
-  background-color: #e5e5e5;
+  color: #ffffff;
+  background-color: #f2000c;
   cursor: pointer;
 }
 
 .text {
   font-family: cursive;
-  color: #5e0000;
+  color: #3c3d3f;
   text-decoration: blink;
+}
+
+.clause {
+  font-size: x-small;
+
 }
 
 .stopka {
@@ -269,7 +269,7 @@
 
 @media (max-width: 767px) {
   .navbar-header {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   .navbar-collapse {
@@ -311,6 +311,14 @@
 
   .button {
     width: 80%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    text-align: center;
   }
 }
 
@@ -362,4 +370,48 @@
     font-size: 18pt;
   }
 
+}
+
+.pudelko {
+  max-width:200px;
+  height:225px;
+  margin:30px auto 10px auto;
+  perspective:300px;
+  -webkit-perspective:300px;
+}
+
+.karta {
+  position:relative;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transition:2s;
+  -webkit-transition:2s;
+  transform-style:preserve-3d;
+  -webkit-transform-style:preserve-3d;
+}
+
+.pudelko:hover > .karta {
+  transform:rotateY(190deg);
+  -webkit-transform:rotateY(190deg);
+}
+
+.przod {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-size:100%;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+
+.tyl {
+  position:absolute;
+  width:100%;
+  height:100%;
+  font-size:1.6em;
+  transform:rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
 }
