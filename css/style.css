@@ -15,6 +15,10 @@
   border-bottom: 1px solid transparent;
 }
 
+.navbar-default .navbar-nav > li > a.active {
+  color: #cd694a;
+}
+
 .navbar-default {
   background-color: #ffffff;
   border-color: #ffffff;
@@ -167,7 +171,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding-bottom: 20px;
 }
 
 #formularz .text {
@@ -411,3 +415,12 @@
   backface-visibility:hidden;
   -webkit-backface-visibility:hidden;
 }
+
+.img-slider {
+  width: 100%;
+  min-height: 399px;
+  max-height: 400px;
+
+
+}
+

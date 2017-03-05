@@ -45,20 +45,72 @@
   </div>
 </div>
 
+
 <div class="container-fluid">
   <div class="row slider">
-    <img src="images/slider/gdansk_1.jpg" alt="" class="img-responsive"/>
-    <div class="twojemiasto">
+  </div>
+</div>
+
+
+<div id="carousel-example-generic2" class="carousel slide">
+  <!-- Wskaźniki w postaci kropek -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Slajdy -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="img-slider" src="images/slider/gdansk_1.jpg" alt="" class="img-responsive"/>
+      <div class="twojemiasto">
                     <span>
                         Gdańsk Twoje Miasto!
                     </span>
+      </div>
+
+      <div class="twojemiasto-btn">
+        <a href="#formularz" class="btn btn-warning">zapisz się na premierę</a>
+      </div>
     </div>
 
-    <div class="twojemiasto-btn">
-      <a href="#formularz" class="btn btn-warning">zapisz się na premierę</a>
+    <div class="item">
+      <img class="img-slider" src="images/slider/gdansk_2.jpg" alt="" class="img-responsive"/>
+      <div class="twojemiasto">
+                    <span>
+                    Miasto innowacji
+                    </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-slider" src="images/slider/gdansk_3.jpg" alt="" class="img-responsive"/>
+      <div class="twojemiasto">
+                    <span>
+                       Miasto z historią
+                    </span>
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-slider" src="images/slider/gdansk_4.jpg" alt="" class="img-responsive"/>
+      <div class="twojemiasto">
+                    <span>
+                       Miasto imprez
+                    </span>
+      </div>
     </div>
 
   </div>
+
+  <!-- Strzałki do przewijania -->
+  <a class="left carousel-control" href="#carousel-example-generic2" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic2" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
 </div>
 
 <div class="container-fluid">
@@ -172,7 +224,7 @@
     <div class="col-xs-12 text-center">
       <h2 class="tytul-sekcji">Zapisz się już teraz! </h2>
       <div id="formularz">
-        <div class="text col-md-8 col-lg-10">
+        <div class="text col-md-8 col-lg-7">
           <p>Jeżeli chcesz dostawać od nas informację o zbliżających się wydarzeniach i event'ach zostaw nam
             swój adres e-mail!</p>
         </div>
@@ -180,15 +232,16 @@
           <form action="" method="post">
             <input class="placeholder" name="email" type="email" placeholder="twój adres@email.pl" required>
             <input class="button" name="submit" type="submit" value="Zapisz się">
-          </form>
-          <div class="checkbox clause col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-xs-12">
-            <label>
-              <input type="checkbox" required></label>
-                  Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany
-              przeze mnie adres e-mail informacji handlowej w rozumieniu art. 10 ust. 1 ustawy z
-              dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną od WEBscy; SP. Z O.O. z siedzibą w Gdańsku . </label>
+            <div class="checkbox clause col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-xs-12">
+              <label>
+                <input type="checkbox" required>
+                Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany
+                przeze mnie adres e-mail informacji handlowej w rozumieniu art. 10 ust. 1 ustawy z
+                dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną od WEBscy; SP. Z O.O. z siedzibą w
+                Gdańsku . </label>
 
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -310,8 +363,10 @@
         <p class="imienazwisko">Błażej Wielgosz</p>
 
         <div class="linki">
-          <a href="#"><img src="images/icon_linkedin.svg" alt=""/></a>
-          <a href="#"><img src="images/icon_www.svg" alt=""/></a>
+          <a href="https://www.linkedin.com/in/b%C5%82a%C5%BCej-wielgosz-65a58754/" target="_blank"><img
+                  src="images/icon_linkedin.svg"
+                  alt=""/></a>
+          <a href="http://www.webap.pl" target="_blank"><img src="images/icon_www.svg" alt=""/></a>
         </div>
       </div>
 
@@ -329,6 +384,7 @@
   </div>
 </div>
 
+<script src="js/menu_control.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
