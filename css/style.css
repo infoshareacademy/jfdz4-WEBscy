@@ -15,6 +15,10 @@
   border-bottom: 1px solid transparent;
 }
 
+.navbar-default .navbar-nav > li > a.active {
+  color: #cd694a;
+}
+
 .navbar-default {
   background-color: #ffffff;
   border-color: #ffffff;
