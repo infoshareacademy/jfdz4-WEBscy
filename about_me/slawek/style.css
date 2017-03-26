@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("images/concrete_seamless.png");
+}
+
+main {
+  width: 900px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  color: #727272;
+}
+
+a {
+  text-decoration: none;
+  color: #cfcfcf;
+  padding: 10px 70px;
+}
+
+a:hover {
+  color: #f8f8f8;
+}
+
+#topbar {
+  background-color: #727272;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 0;
+}
+
+header {
+  width: auto;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 80px 30px 30px 30px;
+}
+
+#clipvideo {
+  margin: 0;
+  padding: 0;
+}
+
+.small {
+  margin: 15px;
+  width: 180px;
+  height: auto;
+}
+
+.small-v {
+  margin: 15px;
+  width: 380px;
+  height: auto;
+}
+
+h2 {
+  margin: 10px 25px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  text-align: left;
+}
+
+h2.uppercase {
+  text-transform: uppercase;
+}
+
+video {
+  width: 900px;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  color: #a59b95;
+  font-size: smaller;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 0;
+  border-bottom: solid 1px;
+}
+
+.piktogram {
+  text-align: right;
+}
+
+.piktogram > img {
+  margin: 15px 5px;
+  width: 3%;
+  height: 3%;
+}
+
+#portfolio-printdesign {
+  padding: 10px;
+  background-color: #567483;
+  color: white;
+  text-align: center;
+  border-left: 6px solid #7b1e7a;
+
+}
+
+#portfolio-grafika {
+  padding: 10px;
+  background-color: #92a8b4;
+  color: white;
+  text-align: center;
+  border-left: 6px solid #188d30;
+}
+
+#portfolio-fotografia {
+  padding: 10px;
+  background-color: #567483;
+  color: white;
+  text-align: center;
+  border-left: 6px solid #ead107;
+}
+
+.logo_slawmali {
+  float: right;
+  margin: -24px 0 0 0;
+  width: 15%;
+  height: auto;
+}
+
+.kontakt {
+  text-decoration: none;
+  color: #727272;
+  padding: 0;
+}
+
+.kontakt:hover {
+  text-decoration: none;
+  color: #7b1e7a;
+  padding: 0;
+  cursor: pointer;
+}
+
+.opis {
+  text-align: left;
+  margin: -10px 0 10px 25px;
+  color: #bfbfbf;
+}
