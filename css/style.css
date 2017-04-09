@@ -299,6 +299,45 @@ body {
   margin: 0;
 }
 
+#cookies-message {
+  background: rgba(87, 176, 185, 0.8);
+  margin-top: 115px;
+  padding: 10px 0px;
+  font-size: 9pt;
+  line-height: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 999;
+  font-weight: bold;
+  color: white;
+}
+
+
+.cookie-more {
+  color: white;
+text-decoration: underline;
+}
+
+#accept-cookies-checkbox{
+
+  margin: 5px;
+  padding: 8px;
+  background-color: #39668b;
+  color: #ffffff;
+  display: inline-block;
+  margin-left: 5px;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
 @media screen and (min-width: 800px) and (max-width: 1200px) {
   .funkcjonalnosci_tresc_dodatkowe,
   .funkcjonalnosci_tresc,
