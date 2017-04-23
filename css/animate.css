@@ -1018,6 +1018,8 @@
 .bounceInUp {
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
+  animation-delay: 2s;
+
 }
 
 @-webkit-keyframes bounceOut {
