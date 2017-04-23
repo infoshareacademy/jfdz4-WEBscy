@@ -1,0 +1,17 @@
+.logo {
+    height: 80px;
+    border: none;
+
+}
+
+.navbar-default {
+    height: 120px;
+}
+.form-control {
+    position: inherit;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
