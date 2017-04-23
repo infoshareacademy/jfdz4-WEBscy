@@ -1,5 +1,11 @@
 $(function () {
-    var scrollOffset = 112;
+    var scrollOffset;
+
+    if ($(window).width() < 768) {
+        scrollOffset = 88;
+    } else {
+        scrollOffset = 108;
+    }
 
     $("#zajawka_link").click(function () {
         $('html, body').animate({
@@ -13,7 +19,7 @@ $(function () {
         }, 1500);
     });
 
-    $("#zapiszsie_link").click(function () {
+    $("#zapiszsie_link, #zapiszsie_btn").click(function () {
         $('html, body').animate({
             scrollTop: $("#zapiszsie").offset().top - scrollOffset
         }, 1500);
