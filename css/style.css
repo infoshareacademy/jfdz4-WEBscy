@@ -238,7 +238,7 @@ body {
   width: 300px;
 }
 
-.button {
+#button {
   color: #ffffff;
   font-weight: bold;
   background-color: #204575;
@@ -247,7 +247,7 @@ body {
   min-width: 150px;
 }
 
-.button:hover {
+#button:hover {
   color: #ffffff;
   background-color: #57b0b9;
   cursor: pointer;
@@ -402,7 +402,7 @@ text-decoration: underline;
     width: 80%;
   }
 
-  .button {
+  #button {
     width: 80%;
   }
 
@@ -537,3 +537,5 @@ text-decoration: underline;
   color: #ffffff;
   padding: 30px 0;
 }
+
+
