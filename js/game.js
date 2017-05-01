@@ -33,24 +33,27 @@ function showBoard() {
     });
 }
 
-$('#button').click(function (event) {
-    event.preventDefault();
-    $('#game').toggleClass('show');
-    $('#instruction').toggleClass('show');
-    $('#zapiszsie').toggleClass('hide');
-    showBoard();
 
-    $('table').on('click', 'td', function () {
-        var click = {
-            x: parseInt($(this).attr('x')),
-            y: parseInt($(this).attr('y'))
-        };
+$(function() {
+    $('#button').click(function() {
+        $('#game').toggle(800).toggleClass('show');
+        $('#instruction').toggle(600).toggleClass('show');
+        $('#zapiszsie').toggle(400).toggleClass('hide');
+
+    });
+
+        showBoard();
+
+        $('table').on('click', 'td', function () {
+            var click = {
+                x: parseInt($(this).attr('x')),
+                y: parseInt($(this).attr('y'))
+            };
 
 
-        if (
-            $(this).hasClass('event')
+            if (
+                $(this).hasClass('event')
 
-        ) {}
+            ) {}
 
-    }); })
-
+        }); })
