@@ -28,10 +28,13 @@ table {
 }
 
 #instruction {
-
+margin-left: 40px;
     display: none;
 }
 
+#instruction div h4 {
+    text-align: center;
+}
 
 
 
