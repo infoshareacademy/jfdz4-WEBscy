@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/game.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="images/fav.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="images/fav.png" sizes="16x16"/>
   <script src="js/jquery-3.2.0.min.js"></script>
 </head>
 <body data-spy="scroll" data-offset="110">
@@ -148,8 +148,8 @@
           <p class="funkcjonalnosci_opis">Podając nam swojego e&#8209;maila możesz zagrać tu w&nbsp;mini-grę
             &#8222;Z&nbsp;myszką po mapie".</p>
         </div>
+      </div>
     </div>
-  </div>
   </div>
 </section>
 
@@ -207,7 +207,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 text-center">
-          <h2 class="tytul-sekcji wow fadeInDown" style="color: white">Nie przegap premiery – zapisz się już&nbsp;teraz! </h2>
+          <h2 class="tytul-sekcji wow fadeInDown" style="color: white">Nie przegap premiery – zapisz się
+            już&nbsp;teraz! </h2>
           <div id="formularz">
             <div class="text col-md-8 col-lg-7">
               <p style="color: white">Jeżeli chcesz dostawać od nas informację o zbliżających się wydarzeniach i
@@ -217,10 +218,10 @@
             <div class="form-inline col-md-8 col-lg-10">
               <form action="" method="post" name="myForm" onsubmit="return validateForm();">
                 <input class="placeholder" id="valid" name="email" type="email" placeholder="twój adres@email.pl">
-                <input id="button" name="submit"  type="submit" value="Zapisz się">
+                <input id="button" name="submit" type="submit" value="Zapisz się">
                 <div class="checkbox clause col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-xs-12">
                   <label>
-                    <input type="checkbox" id="checkbox"  name="checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox">
                     Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany
                     przeze mnie adres e-mail informacji handlowej w rozumieniu art. 10 ust. 1 ustawy z
                     dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną od WEBscy z siedzibą w&nbsp;Gdańsku.
@@ -236,42 +237,56 @@
   </div>
 </section>
 
-
 <!--gra-->
-  <section class="game">
-<div id="instruction" class="col-xs-3">
-  <div id="game-instructions">
-    <h4>Instrukcja</h4>
-    <ul>
-      <li>Masz do dyspozycji postać, którą poruszasz się za pomocą strzłek,
-        lub myszki.
-      </li>
+<div class="container-fluid">
+  <div class="row">
+    <div id="game_area" class="col-lg-12">
+      <div id="game_low_res_info">Gra dostępna jedynie na urządzeniach z większym ekranem &#9786;</div>
+      <div id="game_manual_scores_navigation">
+        <div id="game_manual">
 
-      <li>Twoim zadaniem jest odwiedzenie jak największej ilości wydarzeń
-        w mieście w jak najkrótszym czasie.
-      </li>
+          <p class="game-name"><img src="images/game/car.png" alt=""/> WEBski City Driver</p>
+          <p>
+            <b>Jesteś gotowy na przygodę życia?</b><br>
+            Dziękujemy za przesłanie swojego adresu e-mail. Chcemy umilić korzystanie z internetu i udostępniamy prostą
+            grę zręcznościową.<br><br>
+            <b>Ruszaj w miasto żółtym samochodzikiem WEBskich!</b><br><br>
+            <img src="images/game/arrowKeys.png" alt=""/> Sterowanie za pomocą klawiszy W/S/A/D na klawiaturze.<br><br>
+            <img src="images/game/road_hole.png" alt=""/> Niektóre drogi bywają zamknięte. Jeździmy tylko po
+            ulicach!<br><br>
+            <img src="images/game/markers_mini.png" alt=""/> Odwiedzaj wymagane miejsca i zbieraj punkty.<br><br>
+            <b>Odwiedź wszystkie wymagane miejsca w najkrótszym możliwym czasie. (przygoda życia <img
+              src="images/game/emoji_fun.png" alt="" style="height: 25px;"/>)</b><br>
+          </p>
 
-      <li>Żeby zaliczyć odwiedziny w konkretnym evencie musisz wypić piwko.
-      </li>
+        </div>
 
-      <li>Piwka będą pokazywały się losowo na mapce,i będą one wskazywały
-        na miejsce które masz odwiedzić w danej chwili
-      </li>
+        <div id="game_scores" class="text-center">
+          <p><span class="glyphicon glyphicon-map-marker glyphicon-game" aria-hidden="true"></span> Odwiedzone miejsca:
+            <span class="level-score">0</span></p>
+          <p><span class="glyphicon glyphicon-time glyphicon-game" aria-hidden="true"></span> Twój czas: <span
+            class="level-time">0s</span></p>
+        </div>
 
-      <li>Im więcej piwek zbierzesz tym trudniej będzie Ci dojść do
-      następnego miejsca</li>
+        <div id="game_navigation" class="text-center">
+          <button type="button" class="btn btn-success" id="game-action-btn">rozpocznij grę</button>
+          <button type="button" class="btn btn-default" id="game-end-btn">zakończ grę</button>
+        </div>
 
-      <li><b>Uważaj,pola na mapce które są budynkami,będą zablokowane </b>
-      </li>
-    </ul>
+      </div>
+      <div id="game">
+        <div id="game_welcome">
+          <p>Ruszaj w Miasto!<br>Kliknij guzik <span>rozpocznij grę</span></p>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 </div>
 
-<div id="game" class="col-xs-8">
-</div>
-  </section>
-<!---->
 
+<!---->
 
 
 <section id="tworcy">
@@ -295,8 +310,8 @@
             </div>
             <div class="tyl">
               <a href="about_me/slawek/index.html" target="_blank"><img src="images/team/slawek-tyl.jpg"
-                   alt="Sławek"
-                   class="img-rounded profilowe"
+                                                                        alt="Sławek"
+                                                                        class="img-rounded profilowe"
               />
               </a>
             </div>
@@ -321,8 +336,8 @@
             </div>
             <div class="tyl">
               <a href="about_me/adam/index.html" target="_blank"><img src="images/team/adam-tyl.jpg"
-                   alt="Adam"
-                   class="img-rounded profilowe"
+                                                                      alt="Adam"
+                                                                      class="img-rounded profilowe"
               />
               </a>
             </div>
@@ -348,8 +363,8 @@
             </div>
             <div class="tyl">
               <a href="about_me/daniel/index.html" target="_blank"><img src="images/team/daniel-tyl.jpg"
-                   alt="Daniel"
-                   class="img-rounded profilowe"
+                                                                        alt="Daniel"
+                                                                        class="img-rounded profilowe"
               />
               </a>
             </div>
@@ -374,10 +389,10 @@
             </div>
             <div class="tyl">
               <a href="http://www.webap.pl" target="_blank"><img src="images/team/blazej-tyl.jpg"
-                   alt="Błażej"
-                   class="img-rounded profilowe"
+                                                                 alt="Błażej"
+                                                                 class="img-rounded profilowe"
               />
-                </a>
+              </a>
             </div>
           </div>
         </div>
@@ -406,7 +421,7 @@
   </div>
 </div>
 
-
+<script src="js/game_config.js"></script>
 <script src="js/game.js"></script>
 <script src="js/cookies.js"></script>
 <script src="js/menu_control.js"></script>
