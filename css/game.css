@@ -1,0 +1,227 @@
+#game_area {
+  margin: 60px auto 25px auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+#game_manual_scores_navigation {
+  width: 460px;
+  min-height: 750px;
+  margin-right: 25px;
+}
+
+#game_manual_scores p {
+  margin: 0;
+  padding: 0;
+}
+
+#game_manual .game-name {
+  font-size: 20pt;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#game_manual_scores p, li {
+  line-height: 17pt;
+}
+
+#game_manual img {
+  margin: 5px;
+}
+
+#game_scores {
+  margin-top: 25px;
+  font-weight: bold;
+  border-top: 1px solid #dedede;
+  padding-top: 15px;
+}
+
+#game_scores p {
+  margin-bottom: 15px;
+}
+
+#game {
+  float: right;
+  min-width: 750px;
+  min-height: 750px;
+  position: relative;
+  z-index: 0;
+}
+
+#game_low_res_info {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.game-event-marker {
+  position: absolute;
+  z-index: 1;
+}
+
+table {
+  border-spacing: 0px;
+  /* border-collapse: collapse; */
+}
+
+table, td, th {
+  /* border: 1px solid black; */
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.map-td {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+#car {
+  width: 65px;
+  height: 31px;
+  position: absolute;
+  background: url('../images/game/car.png') no-repeat;
+  z-index: 1;
+}
+
+.car-drive-right {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  filter: fliph;
+}
+
+.rotate-90 {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.rotate-270 {
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.map-field-0 {
+  background: url('../images/game/game_elements.png') 0 0;
+}
+
+.map-field-1 {
+  background: url('../images/game/game_elements.png') -50px 0;
+}
+
+.map-field-2 {
+  background: url('../images/game/game_elements.png') -100px 0;
+}
+
+.map-field-3 {
+  background: url('../images/game/game_elements.png') -150px 0;
+}
+
+.map-field-4 {
+  background: url('../images/game/game_elements.png') -200px 0;
+}
+
+.map-field-5 {
+  background: url('../images/game/game_elements.png') 0 -50px;
+}
+
+.map-field-6 {
+  background: url('../images/game/game_elements.png') -50px -50px;
+}
+
+.map-field-7 {
+  background: url('../images/game/game_elements.png') -100px -50px;
+}
+
+.map-field-8 {
+  background: url('../images/game/game_elements.png') -150px -50px;
+}
+
+.map-field-9 {
+  background: url('../images/game/game_elements.png') -200px -50px;
+}
+
+.map-field-10 {
+  background: url('../images/game/game_elements.png') 0 -100px;
+}
+
+.map-field-11 {
+  background: url('../images/game/game_elements.png') -50px -100px;
+}
+
+.map-field-12 {
+  background: url('../images/game/game_elements.png') -100px -100px;
+}
+
+.map-field-13 {
+  background: url('../images/game/game_elements.png') -150px -100px;
+}
+
+.map-field-14 {
+  background: url('../images/game/game_elements.png') -200px -100px;
+}
+
+.map-field-15 {
+  background: url('../images/game/game_elements.png') 0 -150px;
+}
+
+.map-field-16 {
+  background: url('../images/game/game_elements.png') -50px -150px;
+}
+
+/* trap vertical */
+.map-field-17 {
+  background: url('../images/game/game_elements.png') -100px -150px;
+}
+
+/* trap horizontal */
+.map-field-18 {
+  background: url('../images/game/game_elements.png') -150px -150px;
+}
+
+.map-field-19 {
+  background: url('../images/game/game_elements.png') -200px -150px;
+}
+
+.glyphicon-game {
+  font-size: 15pt;
+}
+
+#game_welcome, #game_thanks {
+  display: none;
+  width: 750px;
+  height: 750px;
+  padding-top: 180px;
+  border: 1px solid #dedede;
+  text-align: center;
+  background: url('../images/game/game_welcom.png') no-repeat center;
+}
+
+#game_welcome p, #game_thanks p {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+#game_welcome span, #game_thanks span {
+  color: #3e9a3e;
+}
+
+@media (max-width: 767px) {
+  game_area {
+    display: none;
+  }
+}
