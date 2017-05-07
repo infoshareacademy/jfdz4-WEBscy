@@ -2,9 +2,9 @@ $(function () {
     var scrollOffset;
 
     if ($(window).width() < 768) {
-        scrollOffset = 250;
+        scrollOffset =78;
     } else {
-        scrollOffset = 50;
+        scrollOffset = 20;
     }
 
     $("#about-link").click(function () {
@@ -36,4 +36,10 @@ $(function () {
             scrollTop: $("#znajdziesz").offset().top - scrollOffset
         }, 1500);
     });
+});
+
+$(document).on('click', '.navbar-collapse.in', function (e) {
+    if ($(e.target).is('a')) {
+        $(this).collapse('hide');
+    }
 });
