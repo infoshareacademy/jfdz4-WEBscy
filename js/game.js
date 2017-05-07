@@ -1,5 +1,8 @@
 // Adam, obsługa formularza przed grą
 
+var documentWidth = $(document).width();
+console.log(documentWidth);
+
 $('#button').unbind('click').bind('click', function () {
   var form = document.forms["myForm"]["email"].value;
   var monkey = form.indexOf("@");
@@ -16,7 +19,12 @@ $('#button').unbind('click').bind('click', function () {
   }
 
   else {
-    $('#game_area').css('display', 'inline-flex');
+    if (documentWidth > 1199) {
+      $('#game_area').css('display', 'inline-flex');
+    } else {
+      $('#game_low_res_info').css('display', 'block');
+    }
+
     $('#zapiszsie').toggle(400).toggleClass('hide');
     setTimeout(function () {
       $('.placeholder').val('');
