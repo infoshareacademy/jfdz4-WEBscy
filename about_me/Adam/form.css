@@ -1,0 +1,23 @@
+.moral {
+
+    background-color: white;
+    padding-bottom: 400px;
+    padding-top: 20px;
+}
+
+
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#moral {
+    display: none;
+}
+
+
