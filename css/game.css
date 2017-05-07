@@ -52,6 +52,7 @@
 }
 
 #game_low_res_info {
+  margin: 35px 0;
   display: none;
   width: 100%;
   text-align: center;
@@ -220,8 +221,13 @@ table, td, th {
   color: #3e9a3e;
 }
 
-@media (max-width: 767px) {
-  game_area {
+@media (max-width: 1199px) {
+  #game_area {
     display: none;
+  }
+
+  #game_low_res_info {
+    font-weight: bold;
+    font-size: 14pt;
   }
 }
