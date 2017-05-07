@@ -2,7 +2,7 @@ $(function () {
     var scrollOffset;
 
     if ($(window).width() < 768) {
-        scrollOffset =78;
+        scrollOffset =45;
     } else {
         scrollOffset = 20;
     }
