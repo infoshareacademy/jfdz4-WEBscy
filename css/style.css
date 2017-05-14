@@ -333,10 +333,21 @@ text-decoration: underline;
 
 }
 
+#app-link {
+    margin: 25px 0;
+}
 
+#app-link p {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #55691e;
+}
 
-
-
+#app-link a {
+    font-size: 16pt;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
   .funkcjonalnosci_tresc_dodatkowe,
