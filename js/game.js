@@ -9,7 +9,6 @@ $('#button').unbind('click').bind('click', function () {
   var dot = form.lastIndexOf(".");
   if (monkey < 1 || dot < monkey + 2 || dot + 2 >= form.length) {
     alert("Wprowadź poprawny adres e-mail");
-    $('.placeholder').val('');
     return false;
   }
   if (!jQuery("#checkbox").is(":checked")) {
@@ -18,7 +17,8 @@ $('#button').unbind('click').bind('click', function () {
 
   }
 
-  else {
+  else
+    {
     if (documentWidth > 1199) {
       $('#game_area').css('display', 'inline-flex');
     } else {
