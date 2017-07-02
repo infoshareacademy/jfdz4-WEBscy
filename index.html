@@ -11,6 +11,27 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="images/fav.png" sizes="16x16"/>
   <script src="js/jquery-3.2.0.min.js"></script>
+  <script>
+    var a = Math.ceil(Math.random() * 10);
+    var b = Math.ceil(Math.random() * 10);
+    var c = a + b
+    function DrawBotBoot() {
+      document.write("Wynik działania " + a + " + " + b + "? ");
+      document.write("<input id='BotBootInput' type='text' maxlength='2' class='placeholder' style='width: 50px;' required />");
+    }
+    function ValidBotBoot() {
+      var d = document.getElementById('BotBootInput').value;
+      if (d == c) {
+        $("#button").removeAttr("disabled");
+        return true;
+      }
+      else {
+        return false;
+      }
+
+
+    }
+  </script>
 </head>
 <body data-spy="scroll" data-offset="110">
 
@@ -108,14 +129,15 @@
 </div>
 
 <section id="app-link">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <p>Nasza aplikacja jest już dostępna! Kliknij poniżej, aby skorzystać.</p>
-                <a href="http://app.webscy.jfdz4.is-academy.pl/" target="_blank" class="btn btn-success">przejdź do aplikacji</a>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p>Nasza aplikacja jest już dostępna! Kliknij poniżej, aby skorzystać.</p>
+        <a href="http://app.webscy.jfdz4.is-academy.pl/" target="_blank" class="btn btn-success">przejdź do
+          aplikacji</a>
+      </div>
     </div>
+  </div>
 </section>
 
 <section id="funkcjonalnosci">
@@ -228,8 +250,11 @@
             </div>
             <div class="form-inline col-md-8 col-lg-10">
               <form action="" method="post" name="myForm" onsubmit="return validateForm();">
-                <input class="placeholder" id="valid" name="email" type="email" placeholder="twój adres@email.pl" required>
-                <input id="button" name="submit" type="submit" value="Zapisz się">
+                <script type="text/javascript">DrawBotBoot()</script>
+                <input class="button" type="button" value="Nie jestem robotem :)" onclick="ValidBotBoot();"/>
+                <input class="placeholder captcha" id="valid" name="email" type="email"
+                       placeholder="twój adres@email.pl" required>
+                <input id="button" name="submit" type="submit" value="Zapisz się" disabled="disabled">
                 <div class="checkbox clause col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 col-xs-12">
                   <label>
                     <input type="checkbox" id="checkbox" name="checkbox" required>
@@ -240,6 +265,7 @@
 
                 </div>
               </form>
+
             </div>
           </div>
         </div>
@@ -251,7 +277,9 @@
 <!--gra-->
 <div class="container-fluid">
   <div class="row">
-    <div id="game_low_res_info" class="col-xs-12 text-center">Dziękujemy, za przesłanie adresu e-mail.<br>Niestety nasza gra dostępna jest jedynie na urządzeniach z większym ekranem.</div>
+    <div id="game_low_res_info" class="col-xs-12 text-center">Dziękujemy, za przesłanie adresu e-mail.<br>Niestety nasza
+      gra dostępna jest jedynie na urządzeniach z większym ekranem.
+    </div>
     <div id="game_area" class="col-lg-12">
       <div id="game_manual_scores_navigation">
         <div id="game_manual">
@@ -267,7 +295,7 @@
             ulicach!<br><br>
             <img src="images/game/markers_mini.png" alt=""/> Odwiedzaj wymagane miejsca i zbieraj punkty.<br><br>
             <b>Odwiedź wszystkie wymagane miejsca w najkrótszym możliwym czasie. (przygoda życia <img
-              src="images/game/emoji_fun.png" alt="" style="height: 25px;"/>)</b><br>
+                src="images/game/emoji_fun.png" alt="" style="height: 25px;"/>)</b><br>
           </p>
         </div>
 
@@ -275,7 +303,7 @@
           <p><span class="glyphicon glyphicon-map-marker glyphicon-game" aria-hidden="true"></span> Odwiedzone miejsca:
             <span class="level-score">0</span></p>
           <p><span class="glyphicon glyphicon-time glyphicon-game" aria-hidden="true"></span> Twój czas: <span
-            class="level-time">0s</span></p>
+              class="level-time">0s</span></p>
         </div>
 
         <div id="game_navigation" class="text-center">
@@ -356,7 +384,8 @@
         <p class="imienazwisko">Adam Grabarczyk</p>
 
         <div class="linki">
-          <a href="https://www.linkedin.com/in/adam-grabarczyk-718828135?trk=nav_responsive_tab_profile_pic" target="_blank"><img src="images/icon_linkedin.svg" alt=""/></a>
+          <a href="https://www.linkedin.com/in/adam-grabarczyk-718828135?trk=nav_responsive_tab_profile_pic"
+             target="_blank"><img src="images/icon_linkedin.svg" alt=""/></a>
           <a href="about_me/Adam/index.html" target="_blank"><img src="images/icon_www.svg" alt=""/></a>
         </div>
       </div>
@@ -410,8 +439,8 @@
 
         <div class="linki">
           <a href="https://www.linkedin.com/in/b%C5%82a%C5%BCej-wielgosz-65a58754/" target="_blank"><img
-            src="images/icon_linkedin.svg"
-            alt=""/></a>
+              src="images/icon_linkedin.svg"
+              alt=""/></a>
           <a href="http://www.webap.pl" target="_blank"><img src="images/icon_www.svg" alt=""/></a>
         </div>
       </div>
@@ -437,5 +466,8 @@
 <script src="js/wow.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  $("#captcha").realperson();
+</script>
 </body>
 </html>

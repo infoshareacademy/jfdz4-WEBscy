@@ -14,7 +14,6 @@ body {
   border: none;
 }
 
-
 .navbar-default .navbar-nav > li > a {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
@@ -239,6 +238,21 @@ body {
   width: 300px;
 }
 
+.button {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #204575;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 12px;
+  min-width: 150px;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #57b0b9;
+  cursor: pointer;
+}
+
 #button {
   color: #ffffff;
   font-weight: bold;
@@ -315,13 +329,12 @@ body {
   color: white;
 }
 
-
 .cookie-more {
   color: white;
-text-decoration: underline;
+  text-decoration: underline;
 }
 
-#accept-cookies-checkbox{
+#accept-cookies-checkbox {
 
   margin: 5px;
   padding: 8px;
@@ -335,19 +348,19 @@ text-decoration: underline;
 }
 
 #app-link {
-    margin: 25px 0;
+  margin: 25px 0;
 }
 
 #app-link p {
-    font-size: 14pt;
-    font-weight: bold;
-    color: #55691e;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #55691e;
 }
 
 #app-link a {
-    font-size: 16pt;
-    padding: 10px 20px;
-    font-family: 'Open Sans', sans-serif;
+  font-size: 16pt;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
@@ -549,7 +562,6 @@ text-decoration: underline;
   color: #ffffff;
   padding: 30px 0;
 }
-
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
   margin-top: -10px;
